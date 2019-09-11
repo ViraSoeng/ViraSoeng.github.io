@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/*-------------------------------Navigation Bar----------------------------*/
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+}
+
+.tittle {
+
+    font-weight: bold;
+    padding: 20px 60px;
+    padding-bottom: 3px;
+    background-color: #FFFFFF;
+    font-size: 40px;
+    font-family: Lithos Pro Regular;
+}
+
+.tittle,
+a {
+    color: #0E4422;
+    text-decoration: none;
+
+}
+
+.divMenu {
+    overflow: hidden;
+     background-color: #0E4422;
+    font-family: Lithos Pro Regular;
+
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    font-size: 20px;
+}
+
+.tittle a:hover {
+    padding-top: 7px;
+    border-top: 3px solid #0E4422;
+    border-bottom: 3px solid #0E4422;
+    border-radius: 15px;
+
+
+}
+
+li a {
+ 
+    display: block;
+    margin-right:  30px;
+    text-decoration: none;
+    color: azure;
+}
+
+li a:hover {
+    border-bottom: 2px solid white;
+
+}
+
+
+
+/*---------------Moving margin down--------------------*/
+.row{
+    margin-top: 140px;
+}
+
+/*---------------------------------About us-------------------------------------*/
+
+.row1{
+     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.row2{
+    width: 40%;
+    margin-left: 5px;
+    
+}
+.row2 h2{
+   text-align: center;
+    border-bottom: 2px solid black;
+}
+p h2{
+    text-align: justify;
+    margin: auto;
+}
+
+/*----------------------------------------Footer---------------------------------------*/
+.footer{
+ 
+}
+.newline {
+    border: 1px dashed #ABABAB;
+}
+.footer1{
+    
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.openningHours{
+    width: 20%;;
+}
+.openningHours input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.openningHours td {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+/*----------------------------------------Responsive-----------------------------------*/
+/* Smartphones (portrait) ---------- */
+        @media screen and (max-width: 320px) {}
+
+        /* Smartphones (landscape) ---------- */
+        @media screen and (min-width: 321px) {}
+
+        /* tablets, iPads (portrait and landscape) ---------- */
+        @media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+        /* tablets, iPads (portrait) ---------- */
+        @media screen and (min-width: 768px) {}
+
+        /* tablets, iPads (landscape) ---------- */
+        @media screen and (min-width: 1024px) {}
+
+        /* Desktops and laptops ---------- */
+        @media screen and (min-width: 1224px) {}
+
+        /* Large screens ---------- */
+        @media screen and (min-width: 1824px) {}
+
+@media screen and (max-width: 600px) {
+
+    .divMenu,
+    ul li {
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .mainCoffee{
+        margin: auto;
+    }
+    .row {
+        margin: 350px 0px;
+        
+    }
+}
+
+@media (max-width: 900px) {
+    .row2 {
+        flex: 100%;
+        max-width: 50%;
+    }
+   
+    .row1, .row{
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .row2 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .openningHours {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+
+
+

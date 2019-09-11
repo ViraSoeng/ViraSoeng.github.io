@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/*-------------------------------Navigation Bar----------------------------*/
+.navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+}
+
+.tittle {
+
+    font-weight: bold;
+    padding: 20px 60px;
+    padding-bottom: 3px;
+    background-color: #FFFFFF;
+    font-size: 40px;
+    font-family: Lithos Pro Regular;
+}
+
+.tittle,
+a {
+    color: #0E4422;
+    text-decoration: none;
+
+}
+
+.divMenu {
+    overflow: hidden;
+     background-color: #0E4422;
+    font-family: Lithos Pro Regular;
+
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    font-size: 20px;
+}
+
+.tittle a:hover {
+    padding-top: 7px;
+    border-top: 3px solid #0E4422;
+    border-bottom: 3px solid #0E4422;
+    border-radius: 15px;
+
+
+}
+
+li a {
+ 
+    display: block;
+    margin-right:  30px;
+    text-decoration: none;
+    color: azure;
+}
+
+li a:hover {
+    border-bottom: 2px solid white;
+
+}
+
+
+
+/*---------------Moving margin down--------------------*/
+.row{
+    margin-top: 140px;
+}
+
+/*---------------------------------About us-------------------------------------*/
+
+.row1{
+     width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+.row2{
+    width: 40%;
+    text-align: center;
+}
+.row2 h2{
+    border-bottom: 2px solid black;
+}
+p h2{
+    text-align: justify;
+}
+
+/*----------------------------------------Reserve---------------------------------------*/
+
+.reserse {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    margin: auto;
+    width: 80%;
+        
+}
+
+.selectOpt {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.selectOpt1 {
+    width: 80%;
+    height: 35px;
+    display: inline-block;
+    /*margin: 0px 20px; */
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: Berlin Sans FB Regular;
+}
+
+select,
+input,
+button {
+
+    font-family: cursive;
+}
+
+/*----------------------------------------Footer---------------------------------------*/
+.footer{
+ 
+}
+.newline {
+    border: 1px dashed #ABABAB;
+}
+.footer1{
+    
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.openningHours{
+    width: 20%;;
+}
+.openningHours input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.openningHours td {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+/*----------------------------------------Responsive-----------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+    .divMenu,
+    ul li {
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .mainCoffee{
+        margin: auto;
+    }
+    .row {
+        margin: 350px 0px;
+    }
+}
+
+/*-------------------*/
+
+
+@media (max-width: 1300px) {
+    .row2, .selectOpt {
+        flex: 100%;
+        max-width: 100%;
+    }  
+}
+
+@media screen and (max-width: 600px) {
+    .openningHours {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/*-------------------------------Navigation Bar----------------------------*/
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.tittle {
+
+    font-weight: bold;
+    padding: 20px 60px;
+    padding-bottom: 3px;
+    background-color: #FFFFFF;
+    font-size: 40px;
+    font-family: Lithos Pro Regular;
+}
+
+.tittle,
+a {
+    color: #0E4422;
+    text-decoration: none;
+
+}
+
+.divMenu {
+
+    overflow: hidden;
+    background-color: #0E4422;
+    font-family: Lithos Pro Regular;
+
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    font-size: 20px;
+
+}
+
+.tittle a:hover {
+    padding-top: 7px;
+    border-top: 3px solid #0E4422;
+    border-bottom: 3px solid #0E4422;
+    border-radius: 15px;
+}
+
+li a {
+    margin-right: 30px;
+    display: block;
+    text-decoration: none;
+    color: azure;
+}
+
+li a:hover {
+    border-bottom: 2px solid white;
+
+}
+
+/*--------------------Content three image---------------------*/
+.row {
+    /*margin:  150px auto 200px auto;*/
+    margin: 190px 0px;
+    text-align: justify;
+}
+
+.columnleft {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: center;
+}
+
+.column {
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    width: 25%;
+    margin: 20px;
+    border: 1.5px solid #E8E8E8;
+}
+
+.read {
+    margin-bottom: 0px;
+}
+
+.column:hover {
+    box-shadow: 0 4px 8px 0 RGB(210, 105, 30);
+    background-color: #F8F8FF;
+}
+
+
+/*-------------------------------Book Table---------------------------*/
+.reserse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.selectOpt {
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.selectOpt1 {
+    width: 80%;
+    height: 150%;
+    display: inline-block;
+    /*margin: 0px 20px; */
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: Berlin Sans FB Regular;
+}
+
+select,
+input,
+button {
+    
+    font-family: cursive;
+}
+
+/*-------------------------------------Application----------------------------*/
+
+.Img {
+    width: 45%;
+    padding: 10px;
+    margin: 0px 10px;
+
+}
+
+div.Img img {
+    width: 50%;
+    height: auto;
+    margin-left: 22.5%;
+}
+
+
+.app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app,
+.reserse {
+    padding-top: 25px;
+}
+
+.Head {
+
+    width: 80%;
+    margin: auto;
+}
+
+/*--------------------------------Favorite Coffee----------------------*/
+
+.divTable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F8FAFF;
+}
+
+.divName {
+    width: 40%;
+}
+
+td {
+      border-bottom: 1px solid gray;
+    padding: 5px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+/*------------------------------Footer------------------------------------------*/
+.newline {
+    border: 1px dashed #ABABAB;
+}
+.footer1{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.openningHours{
+    width: 20%;;
+}
+.openningHours input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*-------------------------------Responsive---------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+    .Head {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .divMenu,
+    ul li {
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .row {
+        margin: 350px 0px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .column,
+    .selectOpt {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .openningHours {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}

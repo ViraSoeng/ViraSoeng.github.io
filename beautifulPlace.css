@@ -1,0 +1,177 @@
+body{
+    margin: auto 0;
+}
+/*-------------------------------Navigation Bar----------------------------*/
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.tittle {
+
+    font-weight: bold;
+    padding: 20px 60px;
+    padding-bottom: 3px;
+    background-color: #FFFFFF;
+    font-size: 40px;
+    font-family: Lithos Pro Regular;
+}
+
+.tittle,
+a {
+    color: #0E4422;
+    text-decoration: none;
+
+}
+
+.divMenu {
+
+    overflow: hidden;
+    background-color: #0E4422;
+    font-family: Lithos Pro Regular;
+
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    font-size: 20px;
+
+}
+
+.tittle a:hover {
+    padding-top: 7px;
+    border-top: 3px solid #0E4422;
+    border-bottom: 3px solid #0E4422;
+    border-radius: 15px;
+}
+
+li a {
+    margin-right: 30px;
+    display: block;
+    text-decoration: none;
+    color: azure;
+}
+
+li a:hover {
+    border-bottom: 2px solid white;
+
+}
+/*------------------------------------------*/
+.wifi:hover{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    transform: translateY(-15px)
+}
+.wifi{
+    width: 30%;
+    box-shadow:5px 10px #888888;
+    
+    border-radius: 15px;
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+div img{
+    width: 100%;
+}
+.wifi1{
+    width: 80%;
+    
+    margin-left: 15px;
+}
+.main{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+h1{
+    text-align: center;
+    border-bottom: 2px dotted green;
+    font-family: cursive;
+}
+.row{
+    margin-top: 170px;
+}
+
+/*--------------------------------Footer-------------------------------*/
+.footer{
+ 
+}
+.newline {
+    border: 1px dashed #ABABAB;
+}
+.footer1{
+    
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.openningHours{
+    width: 20%;;
+}
+.openningHours input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.openningHours td {
+    border-bottom: 1px solid gray;
+    padding: 5px;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+
+/*---------------------------------Responsive--------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+    .divMenu,
+    ul li {
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .row {
+        margin: 300px 0px;
+    }
+}
+
+/*---------------------------------------*/
+ /* tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .wifi{
+        width: 50%;
+    }
+    
+}
+
+/* tablets, iPads (portrait) ---------- */
+@media screen and (max-width: 600px) {
+    .wifi{
+        width: 100%;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .openningHours {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
