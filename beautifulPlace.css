@@ -6,6 +6,7 @@ body{
     position: fixed;
     width: 100%;
     top: 0px;
+    z-index:3;
 }
 
 .tittle {
@@ -102,6 +103,7 @@ h1{
 }
 .row{
     margin-top: 170px;
+    z-index:1;
 }
 
 /*--------------------------------Footer-------------------------------*/
